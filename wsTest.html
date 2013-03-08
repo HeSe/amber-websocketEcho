@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="../../js/amber.js" type="text/javascript"></script>
+</head>
+<body>
+	<p>Open <button onClick="smalltalk.Browser._openOn_(smalltalk.WebSocketTestWidget)"> Browser</button></p>
+
+<script type="text/javascript"> 
+	loadAmber({
+		files: ['WebSocketTest.js'],
+		prefix: 'examples/amber-websocketEcho/js',
+		packages: ['WebSocket-Test'],
+		ready: function() {
+
+			smalltalk.WebSocketTestWidget._startTest();
+		}});
+</script>
+</body>
+</html>
